@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Novels</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style1.css">
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <style>
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+  }
+  h2.hr {
+    border-bottom: 1px solid gray;
+}
+.navbar>.container-fluid .navbar-brand {
+    margin-left: 523px!important;
+}
+.navbar-inverse .navbar-brand {
+    color: #000000!important;
+}
+.navbar-inverse {
+    background-color: #ffffff!important;
+    border-color: #ffffff!important;
+}
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 50px!important;
+    margin-right: auto;
+    margin-left: auto;
+}
+.carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
+    display: block;
+    max-width: 70%!important;
+    height: auto;
+}
+.navbar-brand {
+    float: none!important;
+    height: 50px;
+    padding: 15px 15px;
+    font-size: 64px!important;
+    line-height: 20px;
+}
+.navbar-inverse .navbar-nav>li>a {
+    color: #ff0000!important;
+}
+  </style>
+  <script type="text/javascript">
+$(document).ready(function(){
+    /* Get iframe src attribute value i.e. YouTube video url
+    and store it in a variable */
+    var url = $("#cartoonVideo").attr('src');
+    
+    /* Assign empty url value to the iframe src attribute when
+    modal hide, which stop the video playing */
+    $("#myModal").on('hide.bs.modal', function(){
+        $("#cartoonVideo").attr('src', '');
+    });
+    
+    /* Assign the initially stored url back to the iframe src
+    attribute when modal is displayed again */
+    $("#myModal").on('show.bs.modal', function(){
+        $("#cartoonVideo").attr('src', url);
+    });
+});
+</script>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    
+      <a class="navbar-brand float-none" href="#"><img class="img-responsive custom-img" src="http://localhost/novels/img/logo.png">Novels</a>
+    
+  </div>
+</nav>
+  
+<div class="container-fluid">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+
+      <div class="item active">
+        <img src="http://localhost/novels/img/3.jpg" alt="Chania" width="460" height="345">
+        <div class="carousel-caption">
+          <h3>Novel Books</h3>
+          <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="http://localhost/novels/img/2.jpg" alt="Chania" width="460" height="345">
+        <div class="carousel-caption">
+          <h3>Novel Books</h3>
+          <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+        </div>
+      </div>
+    
+      <div class="item">
+        <img src="http://localhost/novels/img/3.jpg" alt="Flower" width="460" height="345">
+        <div class="carousel-caption">
+          <h3>Novel Books</h3>
+          <p>Beatiful flowers in Kolymbari, Crete.</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="http://localhost/novels/img/4.jpg" alt="Flower" width="460" height="345">
+        <div class="carousel-caption">
+          <h3>Novel Books</h3>
+          <p>Beatiful flowers in Kolymbari, Crete.</p>
+        </div>
+      </div>
+  
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+  <!--nav Starts-->
+      <nav class="navbar navbar-inverse">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#currently">Currently Reading</a></li>
+        <li><a href="#already">Already Read</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  <!--Nav ends-->
+
+<!--Div Starts From Here-->
+<!--start of about-->
+<div class="col-lg-12" id=about>
+<h2 class="text-center hr">ABOUT</h2>
+<div class="col-lg-6">
+<p>lorem Ipsumm is the one of the best Ipsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the best f the bestIpsumm is the one of the bestIpsumm i</p>
+</div>
+<div class="col-lg-6">
+<div class="bs-example">
+    <!-- Button HTML (to Trigger Modal) -->
+    <a href="#myModal" class="btn btn-lg btn-primary" data-toggle="modal">Watch the Video</a>
+    
+    <!-- Modal HTML -->
+    <div id="myModal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">YouTube Video</h4>
+                </div>
+                <div class="modal-body">
+                    <iframe id="cartoonVideo" width="560" height="315" src="https://www.youtube.com/watch?v=e4EYWP9Arhs" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>   
+</div>
+</div>
+<!--End of about-->
+<!--start of Currently Reading -->
+<div class="col-lg-12" id=currently>
+<h2 class="text-center hr">CURRENTLY READING</h2>
+    <div class="col-lg-12">
+    <div class="col-lg-4">
+      <img class="img-responsive" src="http://localhost/novels/img/20-20.jpg">
+    </div> 
+    <div class="col-lg-8">
+        <h3>Revolution 20-20</h3>
+          <p>By Chetan Bhagat</p>
+              <p>lorem Ipsumm is the one of the best Ipsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm</p>
+  </div>
+</div>
+  <div class="col-lg-12">
+    <div class="col-lg-4">
+      <img class="img-responsive" src="http://localhost/novels/img/boyfriend.jpg">
+    </div> 
+    <div class="col-lg-8">
+        <h3>Worlds Best Boyfriend</h3>
+          <p>By Durjoy Datta</p>
+              <p>lorem Ipsumm is the one of the best Ipsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm</p>
+  </div>
+</div>
+</div>
+<!--end of Currently Reading -->
+<!--start of already Read-->
+<div class="col-lg-12" id=already>
+<h2 class="text-center hr">ALREADY READ</h2>
+    <div class="col-lg-12">
+    <div class="col-lg-4">
+      <img class="img-responsive" src="http://localhost/novels/img/anu_aunty.jpg">
+    </div> 
+    <div class="col-lg-8">
+        <h3>How I BRAVED ANU AUNTY AND COFOUNDED A COMPANY</h3>
+          <p>By Varun Agarwal</p>
+              <p>lorem Ipsumm is the one of the best Ipsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm</p>
+     </div>
+    </div>
+   <div class="col-lg-12">
+    <div class="col-lg-4">
+        <img class="img-responsive" src="http://localhost/novels/img/two_states.jpeg">
+    </div> 
+    <div class="col-lg-8">
+        <h3>TWO STATES</h3>
+          <p>By Chetan Bhagath</p>
+              <p>lorem Ipsumm is the one of the best Ipsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm</p>
+    </div>
+    </div>
+    <div class="col-lg-12">
+    <div class="col-lg-4">
+        <img class="img-responsive" src="http://localhost/novels/img/half-girlfriend.jpg">
+    </div> 
+    <div class="col-lg-8">
+        <h3>HALF GIRLFRIEND</h3>
+          <p>By Chetan Bhagath</p>
+              <p>lorem Ipsumm is the one of the best Ipsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm</p>
+    </div>
+    </div>
+    <div class="col-lg-12">
+    <div class="col-lg-4">
+        <img class="img-responsive" src="http://localhost/novels/img/night.jpg">
+    </div> 
+    <div class="col-lg-8">
+        <h3>ONE NIGHT AT THE CALL CENTRE</h3>
+          <p>By Chetan Bhagath</p>
+              <p>lorem Ipsumm is the one of the best Ipsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm is the one of the bestIpsumm</p>
+    </div>
+    </div>
+  </div>
+<!--end of already Read-->
+<!--start of contact-->
+<div class="col-lg-12" id=contact>
+<h2 class="text-center hr">CONTACT</h2>
+<h3>PRUTHVI KIRAN M U</h3>
+<div class="col-lg-6">
+
+<div class="col-lg-3"><p>464/4</br>Ranganatha Nilaya</br>Belludi Galli</br>Davanagere</p></div>
+
+<div class="col-lg-3"><p>SS PG,</br>Sarakki Bus stop</br>Kanakpura Road</br>Bangalore</p></div>
+</div>
+<div class="col-lg-6">
+  <script>
+      function initMap() {
+        var mapDiv = document.getElementById('map');
+        var map = new google.maps.Map(mapDiv, {
+            center: {lat: 44.540, lng: -78.546},
+            zoom: 8
+        });
+      }
+    </script>
+   <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:300px;width:300px;'><div id='gmap_canvas' style='height:300px;width:300px;'></div><div><small><a href="http://www.embedgooglemaps.com">Generate your Google map here, quick and easy!                 Click here                  Visit our website!</a></small></div><div><small><a href="https://binaireoptieservaringen.nl/">Wilt u geld verdienen met de handel in binaire opties, maar is het allemaal onduidelijk hoe dit precies werkt, en welke aanbieders betrouwbaar zijn? Lees dan verder op onze site: wij vergelijken aanbieders op betrouwbaarheid en kwaliteit. Zo komt u nooit voor verrassingen te staan. Wij van binaireoptieservaringen.nl helpen u graag!</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:10,center:new google.maps.LatLng(12.909519,77.57300869999995),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(12.909519,77.57300869999995)});infowindow = new google.maps.InfoWindow({content:'<strong>PRUTHVI KIRAN</strong><br>sarakki busstop,kanakpura road,Bangalore,Karnataka,India<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+
+
+</div>
+</div>
+<!--end of contat-->
+<!--Div End Here-->
+
+
+
+</div>
+
+</body>
+</html>
